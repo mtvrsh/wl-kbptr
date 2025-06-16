@@ -56,10 +56,10 @@ static void get_area_from_screenshot(
     struct state *state, struct floating_mode_state *ms, struct rect area
 ) {
     // This is so that we don't capture window borders.
-    area.x += 1;
-    area.y += 1;
-    area.h -= 2;
-    area.w -= 2;
+    // area.x += 1;
+    // area.y += 1;
+    // area.h -= 2;
+    // area.w -= 2;
 
     struct scrcpy_buffer    *scrcpy_buffer = query_screenshot(state, area);
     enum wl_output_transform output_transform =
